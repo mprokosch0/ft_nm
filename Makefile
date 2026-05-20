@@ -28,6 +28,7 @@ WHITE = \033[0m
 all: $(NAME)
 
 #run command in the docker or do 'export LC_ALL=POSIX' in the terminal
+#pour toolbox : sudo dnf install glibc-devel.i686 libgcc.i686 gcc binutils
 
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(dir $@)
